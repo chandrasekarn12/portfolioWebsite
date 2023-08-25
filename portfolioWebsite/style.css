@@ -1,0 +1,154 @@
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p, h1 {
+    color: rgb(85,85,85);
+}
+
+/* Nav Bar */   
+
+nav,.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+}
+
+li {
+    float: left;
+    display: inline;
+}
+
+a {
+    display: block;
+    font-size: 3vh;
+    padding: 1vw;
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-decoration-color: grey;
+    text-underline-offset: 0.5rem;
+}
+
+.logo {
+    font-size: 3vh;
+}
+
+/* About */
+section {
+    padding-top: 3vh;
+    height: 96 vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 65vh;
+}
+
+.img-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.txt-description {
+    align-self: center;
+    text-align: left;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+button {
+    --c:  #229091; /* the color*/
+    
+    box-shadow: 0 0 0 .1em inset var(--c); 
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: 
+      var(--_g) calc(var(--_p,0%) - 100%) 0%,
+      var(--_g) calc(200% - var(--_p,0%)) 0%,
+      var(--_g) calc(var(--_p,0%) - 100%) 100%,
+      var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+
+    font-family: system-ui, sans-serif;
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: .5em .5em;
+    font-weight: bold;  
+    border: none;
+}
+button:hover {
+   --_p: 100%;
+  transition: background-position .4s, background-size 0s;
+  color: white;
+}
+button:active {
+  box-shadow: 0 0 9e9q inset white; 
+  background-color: var(--c);
+  color: white;
+}
+
+.button-bar {
+    vertical-align: center;
+}
+
+td img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    align-content: center;
+    padding: 0.5rem;
+}
