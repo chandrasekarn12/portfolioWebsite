@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nikhil's Portfolio</title>
+        <link rel="stylesheet" href="projectsStyle.css" />
+    </head>
+    <body>
+        <nav id = "desktop-nav">
+            <div class = "logo">Nikhil Chandrasekar</div>
+            <div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li> <a href="skills.html">Skills</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Blurb -->
+        <h1 class = "title">These are my personal projects!</h1>
+        <br>
+        <p class = "blurb"> My university has a policy against posting in-class projects, so I can't show those.                However, my personal projects are free game! Click the image next to the blurb describing the project description 
+            to be taken to it's GitHub repository.
+        </p>
+        
+        <!-- Income and Health -->
+        <section id = "projects">
+            <table>
+                <tr>
+                    <td>
+                        <div class = "project-image">
+                            <br><br><br>
+                            <img src = "assets/healthProject.jpg" alt = "Healthcare stock image" class = "icon"
+                            onClick = "openWebsiteCode()"/>
+                            
+                            <script>
+                                function openWebsiteCode() {
+                                window.open("https://github.com/chandrasekarn12/chandrasekarn12.github.io/blob/main/index.html", "_blank");
+                            }
+                            </script>
+                        </div>
+                    </td>
+                    <td>
+                        <div class = "project-description">
+                            <h2 class = "title">Health and Income</h1>
+                            <br>
+                            <p>Highlighted the connections between income and specific health markers and advised on how to apply funding to advise on
+                                how to apply funding. We utilized statistical methods like the Mann-Whitney U-tes and two-sample T tests for exploratory analysis
+                                and used linear/polynomial/convex regression models on a feature engineered dataset for more indepth analysis. We hosted this
+                                project on GitHub Pages.
+                            </p>
+                            <br>
+                            <p>Designed in Python using NumPy, Pandas, SciPy, Sklearn, and Matplotlib</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Office Hours Optimization -->
+        <section id = "projects">
+            <table>
+                <tr>
+                    <td>
+                        <div class = "project-image">
+                            <br><br><br>
+                            <img src = "assets/officeHours.png" alt = "Office Hours stock image" class = "icon"
+                            onClick = "openWebsiteCode()"/>
+                            
+                            <script>
+                                function openWebsiteCode() {
+                                window.open("https://github.com/chandrasekarn12/Office-Hours-Project", "_blank");
+                            }
+                            </script>
+                        </div>
+                    </td>
+                    <td>
+                        <div class = "project-description">
+                            <h2 class = "title">Health and Income</h1>
+                            <br>
+                            <p>Devised a way to allocate teaching assistants (TAs) best to minimize office hours wait time. Utilized Poisson processes to 
+                                model students enterring and leaving office hours and used R to find a best way to allocate TA's given this information. Several
+                                days worth of Office Hours data was used to build and verify this model.
+                            </p>
+                            <br>
+                            <p>Designed using R and several statistics concepts like Poisson Proceses and estimators.</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- UPS project -->
+        <section id = "projects">
+            <table>
+                <tr>
+                    <td>
+                        <div class = "project-image">
+                            <br><br><br>
+                            <img src = "assets/UPS.png" alt = "UPS Logo" class = "icon"/>
+                            
+                        </div>
+                    </td>
+                    <td>
+                        <div class = "project-description">
+                            <h2 class = "title">UPS Healthcare portal</h1>
+                            <br>
+                            <p>
+                                My hackathon team and I designed a portal of UPS employees and clients to keep track of the status of healthcare projects. 
+                                This is a full-stack application, and we placed 3rd out of 52 teams of full-time UPS employees, co-ops, and interns. I can't show
+                                the project due to UPS policy.
+                            </p>
+                            <br>
+                            <p>
+                                We connected the front and back ends of the applicatio with Microsoft Dataverse to receive and display project status updates.
+                                These were displayed with PowerApps and PowerBI. All of this was done in a 24 hour window.
+                            </p>
+
+                            <br>
+                            <h2 class = "title">UPS Improved Payment Widget</h1>
+                            <br>
+                            <p>
+                                I designed an improved version of the UPS payment widget with my Hackathon team. We revamped the online experience to prioritize
+                                ACH transactions, which save UPS time and money over the traditional checks and credit card payment options. I can't show
+                                the project due to UPS policy. 
+                            </p>
+                            <br>
+                            <p>
+                                We built this using HTML, CSS, Angular, SQL, and Microsoft Azure SQL Database to build this in a 24 hour window.
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <br>
+    </body>
+</html>

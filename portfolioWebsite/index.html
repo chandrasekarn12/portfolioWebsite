@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nikhil's Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav id = "desktop-nav">
+            <div class = "logo">Nikhil Chandrasekar</div>
+            <div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li> <a href="skills.html">Skills</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <section id = "profile">
+            <div class = "img-container">
+                <img src = "assets/pfp-modified.png" alt = "A picture of Nikhil Chandrasekar">
+            </div>
+            <div class = "txt-description">
+                <h1 class = "title">Hi, I'm Nikhil Chandrasekar!</h1>
+                <br>
+                <p><strong>Education:</strong> University of Maryland</p>
+                <p><strong>Bachelors:</strong> Computer Science / Statistics</p>
+                <p><strong>Masters:</strong> Computer Science</p>
+                <p><strong>GPA:</strong> 3.862</p>
+                <p><strong>Graduation Year:</strong> 2025</p>
+                <br>
+                <p><strong>Email:</strong> nikhchand04@gmail.com</p>
+                <p><strong>Phone Number:</strong> 609-619-1682</p>
+                
+                <table class = "button-bar">
+                    <tr>
+                        <td>
+                            <button class = "resume-button" onclick = "window.open('assets/NikhilChandrasekarResume.pdf')"> Download Resume </button>
+                        </td>
+                        <td>
+                            <img src="assets/linkedInlogo.png" alt="My LinkedIn profile" class="icon" 
+                            onclick= "openLinkedIn()"/>
+                        </td>
+                        <td>
+                            <img src="assets/githubLogo.png" alt="My Github profile" class="icon"
+                            onclick = "openGitHub()"/>
+                        </td>
+                    </tr>
+                </table>
+    
+                <script>
+                    function openLinkedIn() {
+                        window.open("https://linkedin.com/in/nikhil-chandrasekar-73765525b/", "_blank");
+                    }
+                    function openGitHub() {
+                        window.open("https://github.com/chandrasekarn12", "_blank");
+                    }
+                </script>
+            </div> 
+        </section>
+    </body>
+</html>
